@@ -51,7 +51,7 @@ EZ
 VarianceZ <- (3-EZ)^2*1/36+(5-EZ)^2*3/36+(7-EZ)^2*5/36+(9-EZ)^2*7/36+(11-EZ)^2*9/36+(13-EZ)^2*11/36
 VarianceZ
 ```
-
+OK; could just use the fact that Var(Z) = 4*Var(Y).
 
 **Simulation section**  
 
@@ -124,7 +124,7 @@ one.Z()
 one.Z()
 many.Z <- replicate(1000,one.Z())
 ```
-
+OK; didn't need to write a new function, could just define Z <- 2*Y + 1
 10. (1pt)  What is the mean of $Z$?
 ```{r,eval=TRUE}
 mean(many.Z)
