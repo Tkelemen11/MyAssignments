@@ -4,7 +4,7 @@ author: "Tyler Kelemen"
 date: "Due Thursday, September 1 by 5pm on your GitHub repositories"
 output: word_document
 ---
-
+Good work; 18/18
 **Instructions:** The entirety of this assignment must be submitted as an R Markdown file (.Rmd) on your GitHub repository.  Use the .Rmd note handout files and the R Markdown cheat sheet as guidelines.  You are encouraged to save this HW1.Rmd file and fill in the questions with your answers, then submit.  **I should be able to knit your .Rmd file and compile your code myself, so make sure you do some bug checks before submitting!** (I.e., knit the document yourself a couple times and search for errors.)
 
 Consider Example 2 in the notes.  2 dice are rolled, one red and one white.  Let $Y$ be the random variable that denotes the maximum value of the two rolls.  We will use simulation to find the mean and variance of $Y$, and then verify that our simulated results match what we would expect theoretically.
@@ -51,7 +51,7 @@ EZ
 VarianceZ <- (3-EZ)^2*1/36+(5-EZ)^2*3/36+(7-EZ)^2*5/36+(9-EZ)^2*7/36+(11-EZ)^2*9/36+(13-EZ)^2*11/36
 VarianceZ
 ```
-
+OK; could just use the fact that Var(Z) = 4*Var(Y).
 
 **Simulation section**  
 
@@ -124,7 +124,7 @@ one.Z()
 one.Z()
 many.Z <- replicate(1000,one.Z())
 ```
-
+OK; didn't need to write a new function, could just define Z <- 2*Y + 1
 10. (1pt)  What is the mean of $Z$?
 ```{r,eval=TRUE}
 mean(many.Z)
